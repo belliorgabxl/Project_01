@@ -3,9 +3,9 @@ import User from "@/models/user";
 import { NextResponse } from "next/server";
 
 export async function POST(request) {
-    const { username, password ,email} = await request.json();
+    const { username, password ,email ,phone,name,state} = await request.json();
     await connectMongoDB();
-    await User.create({ username,password,email});
+    await User.create({ username,password,email,phone,name,state});
     return NextResponse.json({message : "Register Success"},{status:201});
 };
 

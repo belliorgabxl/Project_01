@@ -1,0 +1,128 @@
+.navbar{
+    top:0;
+    right: 0;
+    left: 0;
+    position:fixed;
+    display: grid;
+    grid-template-columns: 1400px;
+    grid-template-rows: 70px 50px;
+    z-index: 2;
+    box-shadow: 0px 10px 20px gray;
+}
+.navbar a:hover{
+    color: gray;
+}
+.mainbar{
+    display: grid;
+    grid-template-columns: 80px 140px 730px 200px 200px;
+    background-color: #000033;
+    border-bottom: 2px solid gray;
+    box-shadow: 0px 5px 20px black;
+}
+.mainbar_logo{
+    color: white;
+    background-color: #000033;
+    padding-top:9px;
+    padding-left: 23px;
+}
+.mainbar_title a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 30px;
+}
+.mainbar_title{
+    color: white;
+    background-color: #000033;
+    padding-top: 20px;
+    padding-left: 5px;
+    display: grid;
+    place-items: left;
+    border-right: 2px solid gray;
+}
+.mainbar_search1{
+    display: grid;
+    place-items: center;
+    background-color: #000033;
+    padding-left: 200px;
+}
+.mainbar_search2{
+    background: white;
+    width: 300px;
+    display: flex;
+    place-items: center;
+    border: solid 1px #ccc;
+    border-radius: 4px;
+}
+.search{
+    border:none;
+    outline:none;
+    font-size:16px
+  }
+
+  .mainbar_register a{
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 20px;
+}
+.mainbar_register{
+    display: grid;
+    place-items: center;
+    border: 1px solid gray;
+    color: white;
+    margin: 10px 5px 5px 5px;
+    background-color: #000033;
+    height: 40px;
+    width: 120px;
+    margin-left: 95px;
+}
+.mainbar_login a{
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 20px;
+}
+.mainbar_login{
+    display: grid;
+    place-items: center;
+    height: 40px;
+    width: 120px;
+    border: 1px solid gray;
+    margin: 10px 5px 5px 5px;
+    margin-left: 35px;
+    color: white;
+    background-color: #000033;
+}
+.menubar{
+    background-color: #000033;
+    display: grid;
+    grid-template-columns: 70px 266px 266px 266px 266px 266px;
+}
+.burger{
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    color:white;
+    padding:11px 0px 5px 17px;
+}
+.menulist{
+    display: grid;
+    place-items: center;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    color:white;
+}
+.menulist a{
+    color: white;
+    text-decoration: none;
+}
+.layer{
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    border-radius: 2rem;
+    margin-top: 4px;
+  }
+.event1{
+    background-color: gray;
+}

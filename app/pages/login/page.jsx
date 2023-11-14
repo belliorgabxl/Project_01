@@ -2,6 +2,7 @@
 import styles from "./login_form.css";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import NewBar from "@/components/NewBar";
 const getUser = async () => {
   try {
     const res = await fetch("http://localhost:3000/api/users", {
@@ -46,7 +47,7 @@ export default  function login_page(){
     if (user_value == 1 && pass_value == 1){
       alert("Login Success!!");
       try{
-          router.push("/");
+          router.push("/mainpage");
       }catch(e){
         console.log(error);
       }
@@ -64,7 +65,8 @@ export default  function login_page(){
       alert("Username or Password is Wrong.");
     }
   }
-    return(
+    return(<>
+    <NewBar/>
         <div className="login-title">
        <form onSubmit={loginSubmit} className="login-form">
         <div className="register-form-heading">
@@ -84,5 +86,6 @@ export default  function login_page(){
           </button>
        </form>
     </div>
+    </>
     )
 }

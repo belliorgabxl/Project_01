@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import styles from "./styles/Mainbar.css"
+import "./styles/Mainbar.css"
 
 export default function Mainbar(){
     return(
@@ -33,4 +33,4 @@ export default function Mainbar(){
        </nav> 
       </>
     )
-}
+    }
